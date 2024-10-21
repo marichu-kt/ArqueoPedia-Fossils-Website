@@ -3,7 +3,7 @@
 ¡Bienvenido a mi sitio web! Esta página tiene como objetivo describir el propósito y el contenido principal de la página. ¡Espero que encuentres la información que estás buscando!
 
 
-![Banner](imagenes/banner.svg)
+![Banner](imagenes/banner.jpg)
 
 
 ## Información del autor
