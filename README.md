@@ -10,7 +10,7 @@
 
 - Nombre: [Mario-Martínez-Lozano](https://github.com/marichu-kt)
 - Asignatura: [Desarrollo-Web]
-- Grupo: [1-C]
+- Grupo: [2-C]
 
 
 ## Descripción
