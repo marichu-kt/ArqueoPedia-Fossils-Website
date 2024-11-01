@@ -3,7 +3,9 @@
 ¡Bienvenido a mi sitio web! Esta página tiene como objetivo describir el propósito y el contenido principal de la página. ¡Espero que encuentres la información que estás buscando!
 
 
-<img src="imagenes/banner.png" alt="Banner" width="500"/>
+<div align="center">
+    <img src="imagenes/banner.png" alt="Banner" width="500"/>
+</div>
 
 
 ## Información del autor
