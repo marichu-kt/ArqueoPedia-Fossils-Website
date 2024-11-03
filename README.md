@@ -22,7 +22,11 @@ intenta que los usuarios puedan seguir fácilmente cada apartado y sección de u
 
 ## Content
 
-- [Home](index.html)
+- [Captcha](captcha.html)
+- [Inicio](index.html)
+- [Galeria](galeria.html)
+- [Historia](historia.html)
+- [Contacto](contacto.html)
 
 
 ## Configuración
