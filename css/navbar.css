@@ -1,0 +1,164 @@
+/* █░█ █▀▀ █▀█ █▀ █ █▀█ █▄░█   █▄▄ █▀▀ ▀█▀ ▄▀█ */
+/* ▀▄▀ ██▄ █▀▄ ▄█ █ █▄█ █░▀█   █▄█ ██▄ ░█░ █▀█ */
+
+/* Navbar Styles */
+button {
+  border: 0;
+  padding: 0;
+  font-family: inherit;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+
+.navbar {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 90px;
+  background: #19191c;
+  color: #f9f9f9;
+}
+
+@media only screen and (min-width: 600px) {
+  .navbar {
+    justify-content: space-between;
+    padding: 0 16px;
+  }
+}
+
+.navbar-overlay {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+body.open .navbar-overlay {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media only screen and (min-width: 600px) {
+  .navbar-overlay {
+    display: none;
+  }
+}
+
+.navbar-burger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-items: center;
+  width: 64px;
+  height: 90px;
+  padding: 0;
+}
+
+@media only screen and (min-width: 600px) {
+  .navbar-burger {
+    display: none;
+  }
+}
+
+.navbar-title {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.navbar-logo {
+  width: 100px;
+  height: auto;
+}
+
+.navbar-menu {
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  translate: -100% 0;
+  width: 270px;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #000000;
+  visibility: hidden;
+  transition: translate 0.3s;
+}
+
+body.open .navbar-menu {
+  translate: 0 0;
+  visibility: visible;
+}
+
+@media only screen and (min-width: 600px) {
+  .navbar-menu {
+    position: static;
+    translate: 0 0;
+    width: auto;
+    background: transparent;
+    flex-direction: row;
+    visibility: visible;
+  }
+}
+
+/* Estilos para los enlaces del menú */
+.navbar-menu > a {
+  color: rgba(255, 255, 255, 0.5);
+  background: transparent;
+  padding: 0 8px;
+  font-size: 18px;
+  line-height: 50px;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s ease;
+}
+
+.navbar-menu > a.active {
+  color: inherit;
+}
+
+.navbar-menu > a:before {
+  content: "";
+  position: absolute;
+  inset: calc(100% - 4px) 0 0 0;
+  background: #ce4f20;
+  scale: 0 1;
+  transition: 0.3s, transform 0s 0.3s;
+}
+
+.navbar-menu > a:hover {
+  color: #fff;
+}
+
+.navbar-menu > a:hover:before {
+  scale: 1;
+  transform: translate(0);
+}
+
+.navbar-menu > a:has(~ a:hover):before {
+  transform: translate(100% 0);
+  transition: 0.2s 0.2s, scale 0s 0.4s;
+}
+
+.navbar-menu > a:hover ~ a:before {
+  transform: translate(-100% 0);
+  transition: 0.2s 0.2s, scale 0s 0.4s;
+}

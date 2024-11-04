@@ -1,0 +1,54 @@
+/* █░█ █▀▀ █▀█ █▀ █ █▀█ █▄░█   █▄▄ █▀▀ ▀█▀ ▄▀█ */
+/* ▀▄▀ ██▄ █▀▄ ▄█ █ █▄█ █░▀█   █▄█ ██▄ ░█░ █▀█ */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: #3b3d43;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+  }
+  
+  /*█▀▄▀█ █▀▀ █▀▄ █ ▄▀█   █▀█ █░█ █▀▀ █▀█ █ █▀▀ █▀   █▀▀ █▀█ █▄░█   █▀█ ▄▀█ █▄░█ █▀▀ █▀█ █▀   █▀▄ █▀▀  █▀█ █▀▀ █▀ █▀█ █░░ █░█ █▀▀ █ █▀█ █▄░█*/
+  /*█░▀░█ ██▄ █▄▀ █ █▀█   ▀▀█ █▄█ ██▄ █▀▄ █ ██▄ ▄█   █▄▄ █▄█ █░▀█   █▀▄ █▀█ █░▀█ █▄█ █▄█ ▄█   █▄▀ ██▄  █▀▄ ██▄ ▄█ █▄█ █▄▄ █▄█ █▄▄ █ █▄█ █░▀█*/
+  
+  /* iPhone 8 / Redmi 9 - 393x851 */
+  @media (min-width: 393px) and (max-width: 851px) {
+    body {
+      font-size: 15px;
+    }
+  }
+  
+  /* iPad Mini (Vertical) - 768x1024 */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    body {
+      font-size: 16px;
+    }
+  }
+  
+  /* iPad Pro 12.9" (Vertical) - 1024x1366 */
+  @media (min-width: 1024px) and (max-height: 1366px) {
+    body {
+      font-size: 17px;
+    }
+  }
+  
+  /* Pantalla de portátil más común - 1440x900 */
+  @media (min-width: 1440px) and (max-height: 900px) {
+    body {
+      font-size: 18px;
+    }
+  }
+  
+  /* Pantalla Full HD - 1920x1080 */
+  @media (min-width: 1920px) and (max-height: 1080px) {
+    body {
+      font-size: 20px;
+    }
+  }
+  
