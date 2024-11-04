@@ -4,7 +4,7 @@
 
 
 <div align="center">
-    <img src="imagenes/logo.png" alt="Banner" width="500"/>
+    <img src="images/logo.png" alt="Banner" width="500"/>
 </div>
 
 
