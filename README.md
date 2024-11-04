@@ -27,6 +27,7 @@ intenta que los usuarios puedan seguir fácilmente cada apartado y sección de u
 - [Galeria](galeria.html)
 - [Historia](historia.html)
 - [Contacto](contacto.html)
+- [Error 404](404.html)
 
 
 ## Configuración
