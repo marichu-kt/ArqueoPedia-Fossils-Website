@@ -1,0 +1,117 @@
+/* Footer general styles */
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #19191c;
+    color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 60px;
+}
+
+/* Left section with links */
+.footer-left {
+    display: flex;
+    gap: 20px;
+    margin-left: 30px; /* Ajusta este valor según el espacio que desees */
+}
+
+.footer-left a {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-left a:hover {
+    color: #ffffff;
+}
+
+/* Active link style */
+.footer-left a.active {
+    color: #ffffff; /* Color blanco para el enlace activo */
+}
+
+/* Center section with logo */
+.footer-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo {
+    width: 150px;
+    height: auto;
+}
+
+/* Right section with copyright */
+.footer-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px; /* Ajusta este valor según el espacio que desees */
+}
+
+.footer-right p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Responsive layout for small screens */
+@media (max-width: 645px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        height: auto;
+    }
+
+    .footer-left {
+        display: none; /* Oculta los enlaces en pantallas pequeñas */
+    }
+
+    .footer-center {
+        margin-bottom: 10px;
+    }
+
+    .footer-right p {
+        text-align: center;
+        margin-left: 30px; /* Ajusta este valor según el espacio que desees */
+    }
+}
+
+
+@media (min-width: 645px) and (max-width: 950px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        height: auto;
+    }
+
+    .footer-center {
+        order: 1; /* Coloca la imagen primero */
+        margin-bottom: 10px; /* Espacio entre la imagen y los enlaces */
+    }
+
+    .footer-left {
+        display: flex;
+        flex-direction: row; /* Alinea los enlaces en fila */
+        gap: 20px; /* Ajusta el espacio entre los enlaces */
+        margin-bottom: 10px; /* Espacio entre los enlaces y el copyright */
+        order: 2; /* Coloca los enlaces en el medio */
+        margin-right: 30px; /* Ajusta este valor según el espacio que desees */
+    }
+
+    .footer-right {
+        order: 3; /* Coloca el copyright al final */
+        text-align: center;
+        margin-left: 30px; /* Ajusta este valor según el espacio que desees */
+    }
+}
+
+

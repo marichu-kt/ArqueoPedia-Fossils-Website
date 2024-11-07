@@ -25,7 +25,7 @@ button {
   color: #f9f9f9;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 645px) {
   .navbar {
     justify-content: space-between;
     padding: 0 16px;
@@ -50,7 +50,7 @@ body.open .navbar-overlay {
   opacity: 1;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 645px) {
   .navbar-overlay {
     display: none;
   }
@@ -67,7 +67,7 @@ body.open .navbar-overlay {
   padding: 0;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 645px) {
   .navbar-burger {
     display: none;
   }
@@ -82,6 +82,7 @@ body.open .navbar-overlay {
 .navbar-logo {
   width: 100px;
   height: auto;
+  margin-left: 20px; /* Ajusta este valor según el espacio que desees */
 }
 
 .navbar-menu {
@@ -107,7 +108,7 @@ body.open .navbar-menu {
   visibility: visible;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 645px) {
   .navbar-menu {
     position: static;
     translate: 0 0;
@@ -120,6 +121,9 @@ body.open .navbar-menu {
 
 /* Estilos para los enlaces del menú */
 .navbar-menu > a {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Espacio entre el texto y la imagen */
   color: rgba(255, 255, 255, 0.5);
   background: transparent;
   padding: 0 8px;
@@ -161,4 +165,17 @@ body.open .navbar-menu {
 .navbar-menu > a:hover ~ a:before {
   transform: translate(-100% 0);
   transition: 0.2s 0.2s, scale 0s 0.4s;
+}
+
+/* Estilos para las imágenes del menú */
+.navbar-icon {
+  width: 20px; /* Ajusta el tamaño de las imágenes */
+  height: auto;
+  transition: filter 0.3s ease;
+}
+
+/* Aplica el filtro blanco al hacer hover o si el enlace está activo */
+.navbar-menu > a:hover .navbar-icon,
+.navbar-menu > a.active .navbar-icon {
+  filter: brightness(0) invert(1);
 }

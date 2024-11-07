@@ -21,32 +21,54 @@
     <!-- CSS Sheets -->
     <link href="css/styles.css" rel="stylesheet" />
     <link href="css/navbar.css" rel="stylesheet" />
+    <link href="css/footer.css" rel="stylesheet" />
 </head>
 <body>
-    <header>
-      <nav class="navbar">
-        <div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
+  <header>
+    <nav class="navbar">
+      <div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
 
-        <button type="button" class="navbar-burger" aria-expanded="false" onclick="toggleMenuOpen()">
-          <span class="material-icons">menu</span>
-        </button>
-        <h1 class="navbar-title">
-          <a href="index.html">
-            <img src="images/logo.png" alt="Logo" class="navbar-logo" />
-          </a>
-        </h1>
-        <div class="navbar-menu">
-          <a href="index.html">Inicio</a>
-          <a href="galeria.html">Galería</a>
-          <a href="historia.html">Historia</a>
-          <a href="contacto.html" class="active">Contacto</a>
-        </div>
-      </nav>
-    </header>
+      <button type="button" class="navbar-burger" aria-expanded="false" onclick="toggleMenuOpen()">
+        <span class="material-icons">menu</span>
+      </button>
+      <h1 class="navbar-title">
+        <a href="index.html">
+          <img src="images/logo.png" alt="Logo" class="navbar-logo" />
+        </a>
+      </h1>
+      <div class="navbar-menu">
+        <a href="index.html"><img src="images/inicio.png" alt="Inicio" class="navbar-icon" /> Inicio</a>
+        <a href="galeria.html"><img src="images/galeria.png" alt="Galería" class="navbar-icon" /> Galería</a>
+        <a href="historia.html"><img src="images/historia.png" alt="Historia" class="navbar-icon" /> Historia</a>
+        <a href="contacto.html" class="active"><img src="images/contacto.png" alt="Contacto" class="navbar-icon" /> Contacto</a>          
+      </div>        
+    </nav>
+  </header>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <!-- JS Script -->
-    <script type="text/javascript" src="js/navbar.js"></script>
+  <!-- Main Content of the Page -->
+  <main>
+    <!-- Aquí iría el contenido principal de la página -->
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-left">
+        <a href="index.html">Inicio</a>
+       <a href="galeria.html">Galería</a>
+       <a href="historia.html">Historia</a>
+       <a href="contacto.html" class="active">Contacto</a>
+    </div>
+    <div class="footer-center">
+        <img src="images/tittle.png" alt="Tittle Logo" class="footer-logo">
+    </div>
+    <div class="footer-right">
+        <p>© 2024 ArqueoPedia. Sin derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- JS Script -->
+  <script type="text/javascript" src="js/navbar.js"></script>
 </body>
 </html>
