@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ArqueoPedia</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+
+    <!-- Fuentes Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic:wght@400&display=swap" rel="stylesheet">
+  
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
+    <!-- Archivos CSS -->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/navbar.css" rel="stylesheet" />
+    <link href="css/footer.css" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
+      <button type="button" class="navbar-burger" aria-expanded="false" onclick="toggleMenuOpen()">
+        <span class="material-icons">menu</span>
+      </button>
+      <h1 class="navbar-title">
+        <a href="index.html">
+          <img src="images/logo.png" alt="Logo" class="navbar-logo" />
+        </a>
+      </h1>
+      <div class="navbar-menu">
+        <a href="index.html" class="active"><img src="images/inicio.png" alt="Inicio" class="navbar-icon" /> Inicio</a>
+        <a href="galeria.html"><img src="images/galeria.png" alt="Galería" class="navbar-icon" /> Galería</a>
+        <a href="historia.html"><img src="images/historia.png" alt="Historia" class="navbar-icon" /> Historia</a>
+        <a href="contacto.html"><img src="images/contacto.png" alt="Contacto" class="navbar-icon" /> Contacto</a>          
+      </div>        
+    </nav>
+  </header>
+  
+  <!-- Contenido de la página -->
+  <main style="min-height: 4000px;">
+    <!-- Carousel Fotos-->
+    <section id="carousel">
+      <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/fossil-1.jpg" class="d-block w-100" alt="Imagen 1">
+            <div class="carousel-caption text-center">
+              <h1 class="carousel-title">Knightia eocaena</h1>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/fossil-2.jpg" class="d-block w-100" alt="Imagen 2">
+            <div class="carousel-caption text-center">
+              <h1 class="carousel-title">Magnolia pseudokobus</h1>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/fossil-3.jpg" class="d-block w-100" alt="Imagen 3">
+            <div class="carousel-caption text-center">
+              <h1 class="carousel-title">Acanthoceras rhotomagense</h1>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/fossil-4.jpg" class="d-block w-100" alt="Imagen 4">
+            <div class="carousel-caption text-center">
+              <h1 class="carousel-title">Mosasaurus hoffmannii</h1>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/fossil-5.jpg" class="d-block w-100" alt="Imagen 5">
+            <div class="carousel-caption text-center">
+              <h1 class="carousel-title">Phacops rana</h1>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Artículos Fósiles -->
+    <section id="fossil-articles" class="container my-5">
+      <article class="mb-5">
+        <h2 class="article-title">¿Qué es un fósil?</h2><br>
+        <p class="article-text">
+          Un fósil es cualquier evidencia física de un organismo que vivió en el pasado geológico. Puede tratarse de huesos, conchas, dientes, improntas (huellas, rastros) o incluso restos de actividad biológica, como excrementos fosilizados (coprolitos). Lo esencial es que estas evidencias hayan sido preservadas en las rocas o sedimentos, gracias a procesos naturales (por ejemplo, la mineralización) que ocurren a lo largo de millones de años.
+        </p>
+        <p class="article-text">
+          El estudio de los fósiles (paleontología) no solo se centra en identificarlos, sino también en comprender cómo vivieron y cómo eran los ambientes en los que se desarrollaron. A través de los fósiles, los científicos pueden reconstruir ecosistemas antiguos, establecer líneas de parentesco entre especies y entender la historia de la vida en la Tierra.
+        </p>
+        <p class="article-text">
+          William Buckland fue un geólogo y paleontólogo británico pionero, reconocido por describir científicamente al Megalosaurus en 1824, convirtiéndose en la primera descripción formal de un dinosaurio. Este trabajo supuso un hito en la ciencia, pues sentó las bases para estudios posteriores sobre grandes reptiles extintos. Además de sus aportes a la paleontología, Buckland ejerció como profesor de geología en la Universidad de Oxford y fue un gran divulgador de los avances científicos de la época, ayudando a popularizar y a consolidar la investigación de los fósiles como pieza clave para entender la historia natural.
+        </p>
+        <figure class="text-center">
+          <img src="images/fossil-8.jpg" class="article-image" alt="Qué es un fósil">
+          <figcaption>William Buckland (1784–1856) fue un geólogo y paleontólogo inglés que describió el primer dinosaurio, el Megalosaurus.</figcaption>
+        </figure>
+        
+      </article>
+
+      <article class="mb-5">
+        <h2 class="article-title">¿Cómo se forman los fósiles?</h2><br>
+        <p class="article-text">
+          Los fósiles se forman gracias a un proceso de preservación natural que puede abarcar millones de años. En términos generales, el proceso comienza con la muerte de un organismo (un dinosaurio, un molusco, un pez, etc.). Después de su muerte, el cuerpo puede ser rápidamente cubierto por sedimentos (arena, lodo, cenizas volcánicas u otros materiales). Esta rápida cobertura evita o reduce en gran medida la descomposición completa y la acción de carroñeros. Con el paso del tiempo, los sedimentos se compactan y solidifican hasta convertirse en roca. En ese entorno, los restos orgánicos del organismo pueden sufrir transformaciones químicas y estructurales que dan lugar a diversos tipos de fósiles: desde la permineralización, en la que los poros de los restos se rellenan de minerales, hasta la fosilización completa, donde el material orgánico se ve sustituido por sustancias minerales.
+        </p>
+        <p class="article-text">
+          Además de la cobertura por sedimentos y la mineralización, hay otros caminos posibles hacia la fosilización. Por ejemplo, el molde se produce cuando el cuerpo deja su huella en el sedimento pero el material orgánico se destruye, quedando una “impronta” de la forma original. Un contramolde ocurre cuando esa cavidad (el molde) se rellena con otros sedimentos o minerales, generando una réplica sólida de la forma del organismo. También existen fósiles traza, que no son restos directos del cuerpo, sino indicios de la actividad biológica, como huellas de pisadas, madrigueras o excrementos fosilizados (coprolitos). Cada una de estas variantes proporciona pistas valiosas sobre la vida del pasado.
+        </p>
+        <p class="article-text">
+          Debajo se aprecia una ilustración realizada en 1878 que recrea un paisaje típico del Periodo Jurásico en Europa. En primer plano, se observa una costa poco profunda, con vegetación exuberante formada por helechos arborescentes y coníferas primitivas, características de un clima cálido y húmedo de esa época.
+        </p>
+        <figure class="text-center">
+          <img src="images/fossil-9.jpg" class="article-image" alt="Cómo se forman los fósiles">
+          <figcaption>Paisaje realizado en 1878 del periodo Jurásico en Europa, representa 17 tipos de seres vivos del pasado.</figcaption>
+        </figure>
+      </article>
+    
+      <article class="mb-5">
+        <h2 class="article-title">¿Dónde se encuentran los fósiles?</h2><br>
+        <p class="article-text">
+          Los fósiles suelen hallarse principalmente en formaciones rocosas sedimentarias como areniscas, calizas o lutitas, pues estas capas de sedimento se formaron y compactaron a lo largo de millones de años, atrapando los restos de organismos y propiciando su conservación. En algunos casos, también pueden encontrarse en ámbar (resina fosilizada) y en regiones de permafrost, donde el frío actúa como un agente protector que retrasa la descomposición. Su presencia depende en gran parte de la existencia de rocas de la época adecuada, de la ausencia de procesos geológicos muy destructivos (como volcanismo intenso o fuertes plegamientos tectónicos) y del grado de exploración científica de la zona.
+        </p>
+        <p class="article-text">
+          En la imagen que se menciona, se presenta un mapa del mundo del siglo XIX correspondiente al periodo Cretácico, en el que se aprecian los grandes continentes con una configuración diferente a la actual y se indican, mediante ilustraciones o etiquetas, los dinosaurios que supuestamente habitaban cada territorio. En América del Norte se destacan grandes terópodos y dinosaurios con pico de pato; en Europa se muestran iguanodontes y carnívoros de menor envergadura; en partes de África y Asia figuran grandes saurópodos de cuello largo y carnívoros de considerable tamaño; y en Sudamérica se representan enormes herbívoros acompañados de grandes depredadores.
+        </p>
+        <figure class="text-center">
+          <img src="images/fossil-10.jpg" class="article-image" alt="Dónde se encuentran fósiles">
+          <figcaption>Mapa construido en el siglo XIX que muestra el mundo y sus continentes en el periodo Cretácico así como los seres que habitaban en ellos.</figcaption>
+        </figure>
+      </article>
+    
+      <article class="mb-5">
+        <h2 class="article-title">¿Que tipos de fósiles existen?</h2><br>
+        <p class="article-text">
+          Los fósiles se dividen principalmente en fósiles corporales, fósiles traza, moldes y contramoldes, y pseudofósiles. Los fósiles corporales son los restos directos de seres vivos (huesos, conchas, troncos, hojas) y pueden conservarse gracias a procesos como la permineralización (cuando minerales rellenan los poros de la materia orgánica), la petrificación (en la que los minerales reemplazan casi por completo la materia original) o la inclusión en ámbar (como sucede con insectos atrapados en resina fosilizada).
+        </p>
+        <p class="article-text">
+          Los fósiles traza no son partes del organismo sino marcas de su actividad, como huellas de pisadas, túneles o excrementos fosilizados (coprolitos), y resultan muy útiles para comprender la conducta y la alimentación de especies extintas. Cuando el cuerpo de un organismo se descompone y deja su forma en la roca, se forma un molde, y si ese hueco se rellena de minerales o sedimento, aparece un contramolde, generando una copia externa o interna del ser vivo.
+        </p>
+        <p class="article-text">
+          En cuanto a la ilustración de 1862, muestra con estilo victoriano a grandes animales acuáticos del Mesozoico, como el Ichthyosaurus, de cuerpo hidrodinámico parecido al de un delfín y con enormes ojos, y al Plesiosaurus, identificado por su cuello largo, cabeza pequeña y extremidades aplanadas en forma de aletas que le permitían nadar.
+        </p>
+        <figure class="text-center">
+          <img src="images/fossil-11.jpg" class="article-image" alt="Tipos de fósiles">
+          <figcaption>Ilustración de 1862 sobre reptiles prehistóricos británicos.</figcaption>
+        </figure>
+      </article>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div id="cookieConsentOverlay" class="cookie-consent-overlay">
+      <div id="cookieConsentContainer" class="cookie-consent-container">
+        <p>Este sitio utiliza cookies para. Acepte todas las cookies de acuerdo con nuestra Política de Cookies © 2025 ArqueoPedia.</p>
+        <button id="acceptCookieConsent">Aceptar</button>
+        <button id="declineCookieConsent">Cancelar</button>
+      </div>
+    </div>
+    <div class="footer-left">
+        <a href="index.html" class="active">Inicio</a>
+       <a href="galeria.html">Galería</a>
+       <a href="historia.html">Historia</a>
+       <a href="contacto.html">Contacto</a>
+    </div>
+    <div class="footer-center">
+        <img src="images/tittle.png" alt="Tittle Logo" class="footer-logo">
+    </div>
+    <div class="footer-right">
+        <p>© 2025 ArqueoPedia. Derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  
+  <!-- JS Script -->
+  <script type="text/javascript" src="js/navbar.js"></script>
+  <script type="text/javascript" src="js/carousel.js"></script>
+  <script type="text/javascript" src="js/cookies.js"></script>
+</body>
+</html>

@@ -1,0 +1,450 @@
+/* █▀▀ █▀█ █▄░█ ▀█▀ ▄▀█ █▀▀ ▀█▀ █▀█ ░ █▀▀ █▀ █▀ */
+/* █▄▄ █▄█ █░▀█ ░█░ █▀█ █▄▄ ░█░ █▄█ ▄ █▄▄ ▄█ ▄█ */
+
+/* Estilo base: reseteo de box-sizing y mejora de fuentes */
+*, *:before, *:after {
+  box-sizing: border-box; /* Ajuste de caja para todos los elementos */
+  -webkit-font-smoothing: antialiased; /* Suavizado de texto en WebKit */
+  -moz-osx-font-smoothing: grayscale; /* Suavizado de texto en Firefox */
+}
+
+/* Fuentes y espaciado para botones e inputs */
+button, input {
+  font-family: 'Montserrat', sans-serif; /* Fuente principal */
+  font-weight: 700; /* Grosor del texto */
+  letter-spacing: 1.4px; /* Espaciado entre caracteres */
+}
+
+/* Background */
+/* Contenedor principal de la página */
+.background {
+  display: flex; /* Usa flexbox para alinear contenido */
+  min-height: 100vh; /* Altura mínima igual a la pantalla */
+}
+
+/* Contenedor centrado con límites */
+.container {
+  flex: 0 1 900px; /* Controla el ancho del contenedor */
+  margin: auto; /* Centrado automático */
+  padding: 10px; /* Espaciado interno */
+}
+
+/* Caja principal con diseño de pantalla */
+.screen {
+  position: relative; /* Para posicionamiento absoluto de hijos */
+  background: #3e3e3e; /* Fondo gris oscuro */
+  border-radius: 15px; /* Bordes redondeados */
+}
+
+/* Sombra exterior para la pantalla */
+.screen:after {
+  content: ''; /* Elemento vacío para crear efecto */
+  display: block; /* Se comporta como un bloque */
+  position: absolute; /* Posición relativa a .screen */
+  top: 0; /* Ancla en la parte superior */
+  left: 20px; /* Desplaza hacia dentro */
+  right: 20px; /* Desplaza hacia dentro */
+  bottom: 0; /* Ancla en la parte inferior */
+  border-radius: 15px; /* Sombra sigue el borde redondeado */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, .4); /* Sombra difusa */
+  z-index: -1; /* Envía la sombra detrás del contenido */
+}
+
+/* Body */
+/* Sección de información de contacto */
+.contact-info {
+  display: flex; /* Alinea contenido en fila */
+  align-items: center; /* Centra elementos verticalmente */
+  padding: 20px; /* Espaciado interno */
+  background-color: #4d4d4f; /* Fondo gris oscuro */
+  border-radius: 10px; /* Bordes redondeados */
+  color: #fff; /* Texto blanco */
+  width: 100%; /* Ocupar todo el ancho disponible */
+  max-width: 550px; /* Limita el ancho máximo */
+  margin: 0 auto; /* Centrado horizontal */
+  margin-bottom: -130px; /* Espacio negativo para superposición */
+}
+
+/* Imagen redonda en la sección de contacto */
+.contact-photo img {
+  width: 120px; /* Ancho de la imagen */
+  height: 120px; /* Altura de la imagen */
+  border-radius: 50%; /* Hace la imagen circular */
+  margin-right: 20px; /* Espacio entre la imagen y el texto */
+}
+
+/* Texto de los detalles de contacto */
+.contact-details {
+  font-size: 20px; /* Tamaño de fuente grande */
+}
+
+/* Espaciado entre párrafos en detalles de contacto */
+.contact-details p {
+  margin: 10px 0; /* Margen vertical */
+}
+
+/* Enlaces sin estilo predeterminado */
+.no-style {
+  text-decoration: none; /* Elimina subrayado */
+  color: inherit; /* Hereda el color del texto padre */
+}
+
+/* Cambia el color de los enlaces en hover */
+.no-style:hover {
+  color: #4d94ff; /* Azul claro */
+}
+
+/* Cuerpo principal de la pantalla */
+.screen-body {
+  display: flex; /* Flexbox para organizar elementos */
+}
+
+/* Elementos dentro del cuerpo */
+.screen-body-item {
+  flex: 1; /* Ocupa el espacio disponible */
+  padding: 50px; /* Espaciado interno */
+}
+
+/* Configuración específica del lado izquierdo */
+.screen-body-item.left {
+  display: flex; /* Organiza en columna */
+  flex-direction: column;
+}
+
+/* Título principal de la app */
+.app-title {
+  display: flex; /* Alineación flexible */
+  flex-direction: column; /* Orientación vertical */
+  position: relative; /* Posicionamiento para decoraciones */
+  font-size: 26px; /* Tamaño del título */
+}
+
+/* Logo centrado */
+.app-logo {
+  max-width: 275px; /* Ancho máximo */
+  max-height: 275px; /* Altura máxima */
+  margin: 20px auto; /* Centrado con espaciado */
+  display: block; /* Comportamiento como bloque */
+  margin-left: 25px; /* Ajuste opcional */
+}
+
+/* Formulario */
+/* Cabecera del formulario */
+.screen-header {
+  background-color: #363636; /* Fondo gris oscuro */
+  border-radius: 8px; /* Bordes redondeados */
+  color: #fff; /* Texto blanco */
+  padding: 1rem 2rem; /* Espaciado interno */
+  margin-bottom: 20px; /* Separación del contenido inferior */
+  text-align: center; /* Texto centrado */
+}
+
+/* Logo de contacto */
+.contact-logo {
+  width: 400px; /* Ancho del logo */
+  height: auto; /* Mantiene proporción */
+  display: block; /* Comportamiento como bloque */
+  margin: 0 auto; /* Centrado horizontal */
+}
+
+/* Grupo de inputs en formulario */
+.app-form-group {
+  margin-bottom: 15px; /* Separación entre campos */
+}
+
+/* Estilo específico para mensajes */
+.app-form-group.message {
+  margin-top: 40px; /* Espaciado adicional arriba */
+}
+
+/* Botones en el formulario */
+.app-form-group.buttons {
+  display: flex; /* Botones alineados en fila */
+  justify-content: flex-end; /* Alineados a la derecha */
+  align-items: center; /* Centrado vertical */
+  gap: 10px; /* Espacio entre botones */
+  margin-bottom: 0; /* Sin margen inferior */
+}
+
+/* Inputs de texto */
+.app-form-control {
+  width: 100%; /* Ocupan todo el ancho */
+  padding: 10px 0; /* Espaciado interno */
+  background: none; /* Sin fondo */
+  border: none; /* Sin borde */
+  border-bottom: 1px solid #666; /* Línea inferior gris */
+  color: #ddd; /* Texto gris claro */
+  font-size: 14px; /* Tamaño de fuente */
+  outline: none; /* Sin borde al enfocar */
+  transition: border-color .2s; /* Efecto suave en borde */
+}
+
+/* Placeholder en inputs */
+.app-form-control::placeholder {
+  color: #666; /* Placeholder gris */
+}
+
+/* Inputs enfocados */
+.app-form-control:focus {
+  border-bottom-color: #ddd; /* Línea inferior cambia a gris claro */
+}
+
+/* Placeholder en textarea */
+textarea::placeholder {
+  font-weight: bold; /* Texto en negrita */
+  color: #666; /* Gris oscuro */
+}
+
+/* Botón base */
+.app-form-button {
+  font-size: 14px; /* Tamaño del texto */
+  cursor: pointer; /* Cambia el cursor al pasar */
+  outline: none; /* Sin borde al enfocar */
+  border: none; /* Sin borde visible */
+}
+
+/* Botón de reset */
+.app-form-button[type="reset"] {
+  background-color: #ff0000; /* Rojo intenso */
+  color: #fff; /* Texto blanco */
+  padding: 10px 20px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  margin-right: 10px; /* Separación con otros elementos */
+}
+
+/* Hover en botón reset */
+.app-form-button[type="reset"]:hover {
+  background-color: #cc0000; /* Rojo más oscuro */
+}
+
+/* Botón de submit */
+.app-form-button[type="submit"] {
+  background-color: #28a745; /* Verde */
+  color: #fff; /* Texto blanco */
+  padding: 10px 20px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  margin-right: 10px; /* Separación con otros elementos */
+}
+
+/* Hover en botón submit */
+.app-form-button[type="submit"]:hover {
+  background-color: #218838; /* Verde más oscuro */
+}
+
+/* Contenedor del mapa */
+.map-container {
+  margin-top: -80px; /* Superposición al formulario */
+  margin-bottom: 40px; /* Espaciado inferior */
+  margin-left: 40px; /* Margen izquierdo */
+  margin-right: 40px; /* Margen derecho */
+  width: calc(100% - 80px); /* Ancho ajustado según márgenes */
+  height: 450px; /* Altura fija */
+  display: flex; /* Flexbox para centrar contenido */
+  justify-content: center; /* Alineación horizontal */
+  align-items: center; /* Alineación vertical */
+  border-radius: 15px; /* Bordes redondeados */
+  overflow: hidden; /* Oculta contenido desbordado */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+}
+
+/* Fila de widgets */
+/* Contenedor de widgets con distribución en fila */
+.widget-row {
+  display: flex; /* Flexbox para organizar widgets */
+  justify-content: space-between; /* Espaciados uniformes entre widgets */
+  align-items: stretch; /* Estira widgets para igualar alturas */
+  gap: 20px; /* Separación horizontal entre widgets */
+  margin: 40px auto; /* Espaciado superior e inferior y centrado horizontal */
+  max-width: 1200px; /* Ancho máximo del contenedor */
+}
+
+/* Widget genérico */
+/* Estilo base para cada widget */
+.widget {
+  flex: 1; /* Widgets flexibles para ocupar espacio disponible */
+  max-width: 48%; /* Limita el ancho máximo al 48% del contenedor */
+  background: white; /* Fondo blanco */
+  border: 1px solid #ddd; /* Borde gris claro */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para relieve */
+  padding: 20px; /* Espaciado interno */
+  text-align: center; /* Texto centrado */
+  display: flex; /* Flexbox para contenido interno */
+  flex-direction: column; /* Alineación vertical de contenido */
+  justify-content: flex-start; /* Contenido comienza en la parte superior */
+}
+
+/* Título del widget */
+/* Encabezado dentro de cada widget */
+.widget h2 {
+  font-size: 24px; /* Tamaño del texto del título */
+  margin-bottom: 20px; /* Espaciado inferior */
+}
+
+/* Widget de Instagram */
+/* Contenedor para el widget de Instagram */
+.instagram-widget-container {
+  margin-top: 25px; /* Separación superior */
+  height: 700px; /* Altura fija del widget */
+  overflow: hidden; /* Oculta contenido que sobrepase el contenedor */
+}
+
+/* Estilo de los bloques de contenido en el widget de Instagram */
+.instagram-widget-container blockquote {
+  margin: 0 auto; /* Centrado horizontal */
+  padding: 0; /* Sin espaciado interno */
+  max-width: 100%; /* Ajusta el ancho al contenedor */
+  flex: 1; /* Ajuste flexible para contenido interno */
+}
+
+/* Widget de Twitter */
+/* Contenedor para el widget de Twitter */
+.twitter-widget-container {
+  height: 750px; /* Altura fija del widget */
+}
+
+/* Estilo de los bloques de contenido en el widget de Twitter */
+.twitter-widget-container blockquote {
+  margin: 0 auto; /* Centrado horizontal */
+  padding: 0; /* Sin espaciado interno */
+  max-width: 100%; /* Ajusta el ancho al contenedor */
+  font-size: 16px; /* Tamaño del texto */
+  color: #1DA1F2; /* Color azul de Twitter */
+  flex: 1; /* Ajuste flexible para contenido interno */
+}
+
+/* Responsiveness */
+/* Ajustes para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+  /* Cuerpo de la pantalla en columnas */
+  .screen-body {
+      flex-direction: column; /* Cambia orientación de fila a columna */
+      padding: 20px; /* Reduce espaciado general */
+  }
+
+  /* Elementos internos con ajustes de espaciado */
+  .screen-body-item {
+      padding: 0; /* Elimina relleno interno */
+      margin-bottom: 20px; /* Espaciado inferior entre elementos */
+  }
+
+  /* Elemento izquierdo con espaciado adicional */
+  .screen-body-item.left {
+      margin-bottom: 30px; /* Más separación inferior */
+  }
+
+  /* Información de contacto */
+  .contact-info {
+      margin-top: 40px; /* Espaciado superior */
+      margin-bottom: 30px; /* Espaciado inferior */
+      display: flex; /* Disposición en flexbox */
+      flex-direction: column; /* Orientación vertical */
+      align-items: center; /* Centrado horizontal */
+      text-align: left; /* Alineación de texto a la izquierda */
+      width: 90%; /* Reduce el ancho total */
+      max-width: 400px; /* Limita el ancho máximo */
+      margin-left: auto; /* Centrado horizontal */
+      margin-right: auto;
+  }
+
+  /* Espaciado entre imagen y texto en contacto */
+  .contact-photo {
+      margin-bottom: 20px; /* Separación inferior */
+  }
+
+  /* Ajustes de tamaño de imagen en contacto */
+  .contact-photo img {
+      width: 90px; /* Reduce el ancho de la imagen */
+      height: 90px; /* Reduce la altura */
+      border-radius: 50%; /* Mantiene forma circular */
+  }
+
+  /* Detalles de contacto */
+  .contact-details {
+      width: 100%; /* Ocupa todo el ancho disponible */
+  }
+
+  /* Fila de widgets con orientación en columna */
+  .widget-row {
+      flex-direction: column; /* Apila widgets verticalmente */
+      align-items: center; /* Centra widgets horizontalmente */
+  }
+
+  /* Widget ajustado al ancho completo */
+  .widget {
+      max-width: 100%; /* Ocupa todo el ancho disponible */
+  }
+
+  /* Contenedor del mapa con ajustes */
+  .map-container {
+      margin-top: 30px; /* Más separación superior */
+      margin-bottom: 20px; /* Espaciado inferior */
+      margin-left: 10px; /* Márgenes laterales reducidos */
+      margin-right: 10px;
+      width: calc(100% - 20px); /* Ajusta ancho según márgenes */
+      height: 300px; /* Reduce la altura */
+  }
+}
+
+/*█▀▄▀█ █▀▀ █▀▄ █ ▄▀█   █▀█ █░█ █▀▀ █▀█ █ █▀▀ █▀   █▀▀ █▀█ █▄░█   █▀█ ▄▀█ █▄░█ █▀▀ █▀█ █▀   █▀▄ █▀▀  █▀█ █▀▀ █▀ █▀█ █░░ █░█ █▀▀ █ █▀█ █▄░█*/
+/*█░▀░█ ██▄ █▄▀ █ █▀█   ▀▀█ █▄█ ██▄ █▀▄ █ ██▄ ▄█   █▄▄ █▄█ █░▀█   █▀▄ █▀█ █░▀█ █▄█ █▄█ ▄█   █▄▀ ██▄  █▀▄ ██▄ ▄█ █▄█ █▄▄ █▄█ █▄▄ █ █▄█ █░▀█*/
+
+/* iPhone 8 / Redmi 9 - 393x851 */
+@media (min-width: 393px) and (max-width: 851px) {
+  .contact-logo {
+    display: none;
+  }
+
+  .screen-header {
+    display: none;
+    margin-top: -200px;
+  }
+
+  .twitter-widget-container {
+    margin-top: 50px;
+    width: 350px;
+    height: auto;
+  }
+
+  .map-container {
+    margin-top: -100px;
+  }
+}
+
+/* iPad Mini (Vertical) - 768x1024 */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+/* iPad Pro 12.9" (Vertical) - 1024x1366 */
+@media (min-width: 1024px) and (max-height: 1366px) {
+  .screen-header {
+    margin-top: -500px;
+  }
+  
+  .widget {
+    margin-top: -600px;
+  }
+}
+
+/* Pantalla de portátil más común - 1440x900 */
+@media (min-width: 1440px) and (max-height: 900px) {
+  .screen-header {
+    margin-top: -100px;
+  }
+
+  .widget {
+    margin-top: -150px;
+  }
+}
+
+/* Pantalla Full HD - 1920x1080 */
+@media (min-width: 1920px) and (max-height: 1080px) {
+  .screen-header {
+    margin-top: -200px;
+  }
+  
+  .widget {
+    margin-top: -300px;
+  }
+}
