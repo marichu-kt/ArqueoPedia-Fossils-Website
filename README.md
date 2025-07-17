@@ -12,16 +12,6 @@ Está desarrollada utilizando **HTML, CSS y JavaScript**, garantizando una naveg
 
 ---
 
-## 🔖 Uso de referencias de autor en imágenes
-
-Para respetar los **derechos de autor y atribuciones de las imágenes utilizadas**, he empleado la herramienta:
-
-👉 [**SaferLayer**](https://saferlayer.com/)
-
-Esta herramienta permite incrustar sobre las imágenes la referencia del autor o a la actividad a la que se destina la misma, garantizando la correcta atribución de los créditos de forma clara dentro del sitio web evitando cualquier tipo de borrado de los mismo con Inteligencia Artificial.
-
----
-
 ## 🌐 Visita la web
 
 👉 Puedes visitar el sitio aquí:  
@@ -36,6 +26,16 @@ Esta herramienta permite incrustar sobre las imágenes la referencia del autor o
 - [📜 Historia](historia.html)
 - [📬 Contacto](contacto.html)
 - [❌ Error 404](404.html)
+
+---
+
+## 🔖 Uso de referencias de autor en imágenes
+
+Para respetar los **derechos de autor y atribuciones de las imágenes utilizadas**, he empleado la herramienta:
+
+👉 [**SaferLayer**](https://saferlayer.com/)
+
+Esta herramienta permite incrustar sobre las imágenes la referencia del autor o a la actividad a la que se destina la misma, garantizando la correcta atribución de los créditos de forma clara dentro del sitio web evitando cualquier tipo de borrado de los mismo con Inteligencia Artificial.
 
 ---
 
