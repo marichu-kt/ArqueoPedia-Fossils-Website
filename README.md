@@ -18,7 +18,7 @@ Para respetar los **derechos de autor y atribuciones de las imágenes utilizadas
 
 👉 [**SaferLayer**](https://saferlayer.com/)
 
-Esta herramienta permite incrustar sobre las imágenes la referencia del autor de cada una, garantizando la correcta atribución de los créditos de forma clara dentro del sitio web.
+Esta herramienta permite incrustar sobre las imágenes la referencia del autor o a la actividad a la que se destina la misma, garantizando la correcta atribución de los créditos de forma clara dentro del sitio web evitando cualquier tipo de borrado de los mismo con Inteligencia Artificial.
 
 ---
 
