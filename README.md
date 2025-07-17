@@ -1,36 +1,51 @@
-## Este repositorio da información sobre mi página web
-
-¡Bienvenido a mi sitio web! Esta página tiene como objetivo describir el propósito y el contenido principal de la página. ¡Espero que encuentres la información que estás buscando!
-
+# 🦖 ArqueoPedia Fossils Website
 
 <div align="center">
-    <img src="images/logo.png" alt="Banner" width="500"/>
+    <img src="images/logo.png" alt="Logo ArqueoPedia" width="400"/>
 </div>
 
+## 🌿 ¿Qué es ArqueoPedia?
 
-## Información del autor
+**ArqueoPedia** es una página web informativa dedicada al mundo de los fósiles, su historia y curiosidades. Permite a los usuarios explorar galerías de imágenes, aprender sobre la formación de fósiles y descubrir datos interesantes de forma clara y estructurada.
 
-- Nombre: [Mario-Martínez-Lozano](https://github.com/marichu-kt)
-- Asignatura: [Desarrollo-Web]
-- Grupo: [2-C]
+Está desarrollada utilizando **HTML, CSS y JavaScript**, garantizando una navegación intuitiva y un diseño atractivo para cualquier visitante interesado en la paleontología.
 
-## Descripción
+---
 
-Este proyecto está basado en código HTML/CSS/JS, diseñado para el trabajo de la asignatura Desarrollo Web,
-intenta que los usuarios puedan seguir fácilmente cada apartado y sección de una manera eficiente.
+## 🔖 Uso de referencias de autor en imágenes
 
-## Content
+Para respetar los **derechos de autor y atribuciones de las imágenes utilizadas**, he empleado la herramienta:
 
-- [Inicio](index.html)
-- [Galeria](galeria.html)
-- [Historia](historia.html)
-- [Contacto](contacto.html)
-- [Error 404](404.html)
+👉 [**SaferLayer**](https://saferlayer.com/)
 
-## Contacto
+Esta herramienta permite incrustar sobre las imágenes la referencia del autor de cada una, garantizando la correcta atribución de los créditos de forma clara dentro del sitio web.
 
-Para preguntas o más información, puedes contactarme a [marichu.private@proton.me].
+---
 
-## Licencia
+## 🌐 Visita la web
 
-Este proyecto está licenciado bajo la Licencia MIT. Ver el archivo [LICENCIA](LICENSE) para más detalles.
+👉 Puedes visitar el sitio aquí:  
+[**Acceder a ArqueoPedia Fossils Website**](https://marichu-kt.github.io/ArqueoPedia-Fossils-Website)
+
+---
+
+## 🗂️ Contenido del sitio
+
+- [🏠 Inicio](index.html)
+- [🖼️ Galería](galeria.html)
+- [📜 Historia](historia.html)
+- [📬 Contacto](contacto.html)
+- [❌ Error 404](404.html)
+
+---
+
+## 📫 Contacto
+
+Si tienes preguntas o deseas aportar sugerencias, puedes escribirme a:  
+[marichu.private@proton.me](mailto:marichu.private@proton.me)
+
+---
+
+## 📄 Licencia
+
+Este proyecto está licenciado bajo la **Licencia MIT**. Consulta el archivo [LICENSE](LICENSE) para más detalles.
