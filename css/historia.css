@@ -1,0 +1,145 @@
+/* █░█ █ █▀ ▀█▀ █▀█ █▀█ █ ▄▀█ ░ █▀▀ █▀ █▀ */
+/* █▀█ █ ▄█ ░█░ █▄█ █▀▄ █ █▀█ ▄ █▄▄ ▄█ ▄█ */
+
+/* Estilos del banner */
+.banner {
+  position: fixed; /* Fijo en la pantalla */
+  right: 10px; /* Posición horizontal */
+  top: 275px; /* Posición vertical */
+  width: 300px;
+  background-color: #2d2727; /* Fondo oscuro */
+  color: white; /* Texto blanco */
+  padding: 15px;
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+  z-index: 1000; /* Encima de otros elementos */
+  display: flex; /* Contenedor flexible */
+  flex-direction: column; /* Apila elementos */
+  align-items: flex-start;
+}
+
+/* Estilos para iframes */
+.ratio iframe {
+  border-radius: 30px; /* Bordes redondeados */
+  overflow: hidden; /* Oculta contenido desbordante */
+}
+
+/* Texto de descripciones */
+main p {
+  color: white; /* Texto blanco */
+  font-weight: bold; /* Negrita */
+  text-align: justify; /* Justificación */
+  margin: 15px 0; /* Espaciado vertical */
+  line-height: 1.6; /* Altura de línea */
+  font-size: 1rem; /* Tamaño base */
+}
+
+/* Imágenes con bordes redondeados */
+.rounded-image {
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+/* Botón para cerrar el banner */
+.close-banner {
+  margin-left: auto; /* Alinea a la derecha */
+  border: none; /* Sin borde */
+  background: none; /* Fondo transparente */
+  color: white; /* Texto blanco */
+  font-size: 24px; /* Tamaño del texto */
+  cursor: pointer; /* Cursor de mano */
+}
+
+/* Banner responsivo para pantallas pequeñas */
+@media (max-width: 576px) {
+  .banner {
+    right: 0; /* Ajusta posición */
+    bottom: 0;
+    left: 0;
+    top: auto;
+    width: 100%; /* Ocupa todo el ancho */
+    border-radius: 0; /* Bordes rectos */
+  }
+}
+
+
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Línea del timeline */
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 25px; /* Posición fija de la línea */
+  width: 8px; /* Grosor aumentado */
+  height: 100%;
+  background: red; /* Color rojo */
+  border-radius: 4px; /* Esquinas redondeadas */
+  z-index: 1;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-bottom: 40px;
+  padding-left: 50px; /* Espacio para la línea */
+}
+
+/* Puntos rojos del timeline */
+.container > .content::before {
+  content: '';
+  position: absolute;
+  width: 20px; /* Tamaño aumentado */
+  height: 20px; /* Tamaño aumentado */
+  top: 25px; /* Ajusta la posición vertical en pantallas grandes */
+  left: -1px; /* Ajusta la posición horizontal */
+  background: red; /* Color rojo */
+  border-radius: 50%; /* Hace los puntos redondos */
+  z-index: 2;
+}
+
+.image-container {
+  flex: 1 1 100%;
+  margin-bottom: 20px;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.content {
+  flex: 1 1 100%;
+  color: white; /* Texto blanco */
+  background-color: #3a3a3a;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+/* Estilos para resoluciones grandes */
+@media screen and (min-width: 768px) {
+  .container {
+    flex-wrap: nowrap;
+  }
+
+  .image-container {
+    flex: 1;
+    margin-bottom: 0;
+    margin-right: 20px; /* Espacio entre imagen y texto */
+  }
+
+  .content {
+    flex: 2;
+  }
+}
