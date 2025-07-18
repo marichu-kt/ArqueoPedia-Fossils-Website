@@ -23,7 +23,7 @@ Está desarrollada utilizando **HTML, CSS y JavaScript**, garantizando una naveg
 
 - [🏠 Inicio](index.html)
 - [🖼️ Galería](galeria.html)
-- [📜 Historia](historia.html)
+- 📜 [Historia](historia.html)
 - [📬 Contacto](contacto.html)
 - [❌ Error 404](404.html)
 
