@@ -41,11 +41,11 @@ Esta herramienta permite incrustar sobre las imágenes la referencia del autor o
 
 ## 📫 Contacto
 
-Si tienes preguntas o deseas aportar sugerencias, puedes escribirme a:  
-[marichu.private@proton.me](mailto:marichu.private@proton.me)
+Si tienes preguntas o deseas aportar sugerencias, puedes escribirme a: [marichu.private@proton.me](mailto:marichu.private@proton.me)
 
 ---
 
 ## 📄 Licencia
 
 Este proyecto está licenciado bajo la **Licencia MIT**. Consulta el archivo [LICENSE](LICENSE) para más detalles.
+
