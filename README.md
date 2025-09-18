@@ -14,8 +14,7 @@ Está desarrollada utilizando **HTML, CSS y JavaScript**, garantizando una naveg
 
 ## 🌐 Visita la web
 
-👉 Puedes visitar el sitio aquí:  
-[**Acceder a ArqueoPedia Fossils Website**](https://marichu-kt.github.io/ArqueoPedia-Fossils-Website)
+👉 Puedes visitar el sitio aquí: [**Acceder a ArqueoPedia Fossils Website**](https://marichu-kt.github.io/ArqueoPedia-Fossils-Website)
 
 ---
 
@@ -48,4 +47,5 @@ Si tienes preguntas o deseas aportar sugerencias, puedes escribirme a: [marichu.
 ## 📄 Licencia
 
 Este proyecto está licenciado bajo la **Licencia MIT**. Consulta el archivo [LICENSE](LICENSE) para más detalles.
+
 
